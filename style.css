@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    background-image: url(images/bkgr.jpg);
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(255, 95, 55);
+    margin: 0;
+    padding: .5em 2em;
+    border: 1px;
+    text-align: center;
+
+}
+
+nav a {
+    padding: .5em 5em;
+    color: rgb(15, 90, 8);
+
+}
+
+
+
+div.make img {
+    padding: 1em;
+    border-radius: 50%;
+    width: 700px;
+}
+
+div.make p {
+    background-origin: padding-box;
+    background-color: rgb(251, 255, 5);
+    text-align: center;
+    font-size: xx-large;
+}
+
+div.shop p {
+    background-origin: padding-box;
+    background-color: rgb(251, 255, 5);
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+div.shop button {
+    box-sizing: border-box;
+    background-color: rgb(22, 248, 15);
+    color: rgb(10, 10, 10);
+    font-size: x-large;
+
+
+}
+
+footer {
+    background-color: rgb(255, 95, 55);
+    text-align: center;
+}
