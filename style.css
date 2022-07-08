@@ -21,10 +21,13 @@ nav a {
 
 
 
-div.make img {
+div.make button {
+    background-image: url(images/dolewhip.jpg);
     padding: 1em;
+    background-size: 500px;
     border-radius: 50%;
-    width: 700px;
+    height: 500px;
+    width: 500px;
 }
 
 div.make p {
