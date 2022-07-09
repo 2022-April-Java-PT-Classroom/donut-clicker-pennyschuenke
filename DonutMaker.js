@@ -12,36 +12,47 @@ class DonutMaker {
 
   }
   addDonut() {
-    this.numDonuts += 1;
+   
     if(this.numMultipliers >=1){
     this.numDonuts += Math.pow(1.2, this.numMultiplierCount);
     }
     else if(this.numAutoclickers >= 1){
-      this.numDonuts += Math.pow(.10,this.numAutoClickerCount);
+      this.numDonuts += Math.pow(1.10,this.numAutoClickerCount);
 
     }
-
-
-
+    this.numDonuts += 1;
 
   }
+  
   addAutoclicker() {
 
-    // for (let i = 0; i < this.numAutoclickers; i++) {
-    // }
-    if (this.numDonuts >= 100) {
-      this.numDonuts -= this.autoclickercost;
+    for (let i = 0; i < this.numAutoclickers; i++) {
+    }
+    if (this.numDonuts >= this.autoclickercost) {
+      this.numDonuts -= this.autoclickercost ;
       this.numAutoclickers += 1;
     }
+    if(this.addAutoclicker >= 1){
+      this.autoclickercost += Math.round(.10,this.autoclickercost);
+    }
+    // if (this)
     }
 
 
 
   addMultipliers() {
-    if (this.numDonuts >= 10) {
+    if (this.numDonuts >=this.multipliercost) {
       this.numDonuts -= this.multipliercost ;
       this.numMultipliers += 1;
     }
+    if (this.multipliercost >= 1){
+      this.multipliercost += Math.round(1.10,this.multipliercost);
+    }
+    if(this.numDonuts < 0){
+      alert(this.multipliercost.addDonut + 'not enough whips');
+
+    }
+
   }
 
   increaseMultiplierCost(){
@@ -52,21 +63,23 @@ class DonutMaker {
     }
   }
   increaseAutoclikerCost(){
-    let currentAutoclickerCost = (this.autoclickercost * (this.addAutoclicker  *.10));
+    let currentAutoclickerCost = (this.autoclickercost * (this.addAutoclicker  * 1.10));
      if(this.numDonuts >= currentAutoclickerCost){
       this.numDonuts -= currentAutoclickerCost;
       this.numAutoclickers++;
      }
   }
   addMultiplierCount() {
+    for (let i = 0; i < this.numAutoclickers; i++) {
+    }
     if (this.numMultipliers > 0) {
-      this.numDonuts += Math.pow(1.2, this.numMultiplierCount);
-      setInterval(this.numDonut, 1000);
+      this.numDonuts +=  this.numMultiplierCount * 1.2 ;
+      // setInterval(this.numDonut , 1000);
     }
   }
   addAutoClickerCount() {
     if (this.addAutoclicker) {
-      this.addAutoclicker += Math.pow(.10, this.numAutoClickerCount);
+      this.addAutoclicker += Math.round(this.numAutoClickerCount * 2.0);
       setInterval(this.numDonuts, 500);
 
     }
