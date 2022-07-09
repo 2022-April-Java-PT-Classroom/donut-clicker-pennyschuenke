@@ -15,7 +15,7 @@ function renderPage() {
 function donutfunk(){
    
 
-const createDonut = new DonutMaker(0, 0,100, 0,10,0,0.0);
+const createDonut = new DonutMaker(0, 0,100, 0,10,5,2,false);
 const createBtn = document.querySelector('#whips');
 const createBtn1 = document.querySelector('#Glove');
 const createBtn2 = document.querySelector('#Crush');
@@ -35,11 +35,7 @@ createBtn.addEventListener('click', () => {
     console.log("hi");
 
 });
-function autoclickers(){
-    createDonut.addDonut+=1;
-    createDonut.addAutoClickers();
-    updateCounts();
- }
+
 createBtn1.addEventListener('click',()=>{
     createDonut.addMultipliers(); 
     createDonut.addMultiplierCount();
@@ -57,14 +53,21 @@ createBtn2.addEventListener('click',()=>{
 
 
  setInterval(()=>{
-    if(createDonut.activateAutoClickers ){
-        // console.log('firing');
+    for (let i = 0; i < this.numAutoClickerCount; i++) {
+        this.addAutoClickers;
+    
+    }
+    if(createDonut.activateAutoClickers == true ){
+        console.log('firing');
         createDonut.addDonut();
         
     }
  },1000);
 
-
+ function autoclickers(){
+    DonutMaker.addAutoClickers();
+    updateCounts();
+ }
 
 function updateCounts() {
     points.innerText = createDonut.numDonuts;

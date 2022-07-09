@@ -25,16 +25,20 @@ class DonutMaker {
   }
   
   addAutoclicker() {
+  
 
-    for (let i = 0; i < this.numAutoclickers; i++) {
+    for (let i = 0; i < this.numAutoClickerCount; i++) {
+    
     }
     if (this.numDonuts >= this.autoclickercost) {
       this.numDonuts -= this.autoclickercost ;
       this.numAutoclickers += 1;
     }
     if(this.addAutoclicker >= 1){
-      this.autoclickercost += Math.round(.10,this.autoclickercost);
+      this.autoclickercost += Math.pow(1.2,this.autoclickercost);
+      setInterval(this.numAutoClickerCount, 1000);
     }
+    let autoclickercost =100;
     // if (this)
     }
 
@@ -70,11 +74,11 @@ class DonutMaker {
      }
   }
   addMultiplierCount() {
-    for (let i = 0; i < this.numAutoclickers; i++) {
+    for (let i = 0; i < this.numAutoclickerCount; i++) {
     }
     if (this.numMultipliers > 0) {
       this.numDonuts +=  this.numMultiplierCount * 1.2 ;
-      // setInterval(this.numDonut , 1000);
+      setInterval(this.numDonut , 1000);
     }
   }
   addAutoClickerCount() {
