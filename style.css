@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    background-image: url(images/bkgr.jpg);
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(255, 95, 55);
+    margin: 0;
+    padding: .5em 2em;
+    border: 1px;
+    text-align: center;
+
+}
+
+nav a {
+    padding: .5em 5em;
+    color: rgb(15, 90, 8);
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(255, 95, 55);;
+
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content ul li{
+    text-justify: distribute;
+    text-align: justify;
+  }
+
+
+div.make button {
+    background-image: url(images/dolewhip.jpg);
+    padding: 1em;
+    background-size: 500px;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    
+}
+
+div.make p {
+    background-origin: padding-box;
+    background-color: rgb(251, 255, 5);
+    text-align: center;
+    font-size: xx-large;
+}
+
+div.shop p {
+    background-origin: padding-box;
+    background-color: rgb(251, 255, 5);
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+div.shop button {
+    box-sizing: border-box;
+    background-color: rgb(22, 248, 15);
+    color: rgb(10, 10, 10);
+    font-size: x-large;
+
+
+}
+
+footer {
+    background-color: rgb(255, 95, 55);
+    text-align: center;
+}

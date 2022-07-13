@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>DoleWhip Clicker</title>
+</head>
+
+<body>
+  <nav id="navBar">
+    <a href="#top">Home</a>
+    <a href="#Dolewhip">Disney Treats inspired Co</a>
+    <a href="#Inspo">Inspo for game </a>
+    <a href="#AboutMe">About the Creator</a>
+    <div class="dropdown">
+      <span>click</span>
+      <div class="dropdown-content">
+      <ul>
+        <li> <a href="#Dolewhip">Disney Treats inspired Co</a></li>
+        <li><a href="#Inspo">Inspo for game </a></li>
+        <li> <a href="#AboutMe">About the Creator</a></li>
+      </ul>
+    
+   </div>
+  </div>
+
+  </nav>
+  <main>
+
+    <div class="make">
+      <button type="button" name="button" id="whips" ></button>
+      <p> Dolewhips Made: <span id="points">0</span></p>
+
+    </div>
+
+    <!-- <script id=AutoC></script> -->
+    <div class="shop">
+      <p>Owned Autoclickers: <span id="ac">0</span></p>
+      <p>Owned Auto multi: <span id="ac1">0</span></p>
+      <button type="button" name="button" id="Glove">Scoop multi </button>
+      <button type="button" name="button" id="Crush">Crusher Auto clicker</button>
+     
+    </div>
+        
+  </main>
+  <div class="container"></div>
+  <script src="./app.js"></script>
+  <script src="./DonutMaker.js"></script>
+</body>
+<footer>penny schuenke 2022</footer>
+
 </html>
